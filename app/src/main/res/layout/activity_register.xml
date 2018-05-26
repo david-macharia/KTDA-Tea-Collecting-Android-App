@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:orientation="vertical" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="forthall.synergy.dansonmbuthia.application.ktdainterfaces.Register">
+
+    <!-- Login progress -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ProgressBar android:id="@+id/login_progress"
+                 style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:progress="30"
+        android:layout_marginBottom="8dp" android:visibility="gone" />
+    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:textSize="40dp"
+    android:text="Update Grower records"
+    android:id="@+id/update_grower_text_view"
+    android:textStyle="bold|italic"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content" />
+ <LinearLayout android:layout_width="wrap_content"
+                 android:id="@+id/grower_records_layout"
+
+                 android:layout_below="@id/update_grower_text_view"
+                 android:layout_height="wrap_content"
+
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true">
+    <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentLeft="true">
+        <TextView
+                android:id="@+id/nameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+
+                android:paddingRight="10dp"
+                android:text="Name:" />
+        <TextView
+                android:id="@+id/growerNumberLab"
+                android:layout_width="wrap_content"
+
+                android:gravity="center_vertical"
+                android:layout_height="50dp"
+                android:paddingRight="10dp"
+                android:text="GroNo:" />
+        <TextView
+                android:id="@+id/clerkNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+
+                android:text="Clerk:" />
+        <TextView
+                android:id="@+id/growerEmailLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="Email:" />
+        <TextView
+                android:id="@+id/growerNumberLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingRight="5dp"
+                android:maxLines="1"
+                android:text="Number:"/>
+
+    </LinearLayout>
+
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+    <TextView
+            android:id="@+id/growerName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/nameLabel"
+            android:layout_toEndOf="@+id/nameLabel"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/nameLabel"
+            android:gravity="center_vertical"
+            android:hint="Grower Name"
+            android:inputType="text"
+            android:maxLines="1"
+    />
+    <TextView
+            android:id="@+id/growerNumber"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/growerNumberLab"
+            android:layout_toEndOf="@+id/growerNumberLab"
+            android:layout_toRightOf="@+id/growerNumberLab"
+            android:gravity="center_vertical"
+            android:hint="Grower Number"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+    <TextView
+            android:id="@+id/clerkName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+
+            android:hint="Clerk name"
+            android:layout_marginLeft="20dp"
+
+            android:maxLines="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    <EditText
+            android:id="@+id/growerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/growerEmailLabel"
+            android:layout_toEndOf="@+id/growerEmailLabel"
+            android:layout_toRightOf="@+id/growerEmailLabel"
+            android:hint="Grower Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="20dp"
+            />
+    <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+    <TextView
+            android:id="@+id/countryCodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingTop="20dp"
+            android:layout_toLeftOf="@+id/phoneNumber"
+            android:text="+254"
+
+            android:textStyle="bold" />
+
+
+    <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:hint="Phone number"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingTop="20dp"
+
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent"
+              android:layout_below="@+id/grower_records_layout"
+              android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/Update_Farmer_Records"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/grower_records_layout"
+                android:text="Update Records"
+                android:textStyle="bold"
+               />
+
+</LinearLayout>
+
+</RelativeLayout>

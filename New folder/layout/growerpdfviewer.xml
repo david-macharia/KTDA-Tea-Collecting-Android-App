@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+     android:background="#336600"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FFFFFF"
+                android:id="@+id/pdfImageView"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </FrameLayout>
+
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Show me After each transaction"
+        android:id="@+id/showPdf"
+        android:layout_gravity="bottom"
+        android:checked="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_height="49dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:text="Cancel"
+
+             android:id="@+id/cancel_pdf_dialog"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+             />
+        <Button
+            android:layout_width="wrap_content"
+         android:layout_alignParentRight="true"
+            android:text="Okey"
+            android:id="@+id/accept_pdf_dialog"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/tea_back"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="10"
+    android:id="@+id/collecting_layout">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+android:layout_weight="10"
+android:id="@+id/scroller"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:text="Tea Factory   "
+            android:gravity="left|center"
+            android:layout_marginLeft="0dp"
+            android:paddingLeft="5dp"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:text="'none"
+            android:gravity="center"
+
+            android:saveEnabled="false"
+            android:id="@+id/factory_selected_text"
+           />
+
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Change Tea Factory"
+
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:text="Buying Center"
+            android:gravity="left|center"
+            android:paddingLeft="5dp"
+           android:id="@+id/centerdisplay"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:text="'none"
+
+            android:saveEnabled="false"
+            android:gravity="center"
+            android:id="@+id/center_selected_text"
+            />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Change Buying Center"
+
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+
+
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:text="Growers Name"
+            android:gravity="left|center"
+            android:id="@+id/growerdisplay"
+            android:paddingLeft="5dp"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:text="none"
+            android:gravity="center"
+            android:saveEnabled="false"
+            android:id="@+id/buyer_selected_text"
+            />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Change Growers Name"
+android:paddingBottom="10dp"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+<!--The bag header layout of the table
+has its own specific tablelayout
+-->
+
+
+    <LinearLayout
+
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        >
+
+
+
+
+        <TableRow
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/header_background"
+            android:orientation="horizontal"
+            >
+
+
+    <TextView
+        android:layout_column="0"
+        android:layout_row="0"
+        android:text="Bag No"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="64dp"
+        android:background="@drawable/header_background"
+        android:layout_height="fill_parent"/>
+    <TextView
+        android:layout_column="1"
+        android:layout_row="0"
+
+        android:text="Weight(Kgs)"
+        android:background="@drawable/header_background"
+        android:layout_width="151dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_column="2"
+        android:layout_row="0"
+        android:text="Standard"
+
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/header_background"
+        android:layout_height="fill_parent"
+        android:layout_width="match_parent"/>
+        </TableRow>
+
+</LinearLayout>
+    <LinearLayout
+
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        >
+
+
+
+
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+android:layout_weight="380"
+        android:layout_height="fill_parent"
+       >
+        <LinearLayout
+            android:layout_width="fill_parent"
+
+            android:layout_height="fill_parent">
+            <TableLayout android:layout_width="match_parent"
+                android:id="@+id/table_layout_to_add_row"
+                android:layout_height="wrap_content">
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_weight="0.3"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_bag_to_the_row_button"
+            android:text="Add Bag"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Buy"
+            android:id="@+id/buytea"
+
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
+

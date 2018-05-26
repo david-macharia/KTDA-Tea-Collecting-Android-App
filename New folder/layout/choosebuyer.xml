@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android:LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/background_one"
+        android:scrollbars="horizontal|vertical"
+        layout_width="match_parent"
+        layout_height="match_parent"
+        android:weightSum="1"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#CCFFCC"
+
+    android:layout_height="100dp">
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+     android:gravity="center_vertical"
+        android:text="Factory"
+        android:id="@+id/factorylabel" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@id/factorylabel"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:popupBackground="#CCFFCC"
+
+        android:id="@+id/factoryspinner"
+        android:spinnerMode="dropdown" />
+
+<CheckBox
+    android:layout_width="110dp"
+    android:text="Remember"
+    android:id="@+id/rememberfactory"
+    android:checked="true"
+    android:layout_height="match_parent" />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#CCFFCC"
+        android:layout_height="100dp">
+        <TextView
+
+
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="0"
+            android:text="Center"
+            android:id="@+id/buyingCenterlabel" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/factorylabel"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/centerspinner"
+            android:spinnerMode="dialog" />
+
+        <CheckBox
+            android:layout_width="110dp"
+            android:text="Remember"
+            android:checked="true"
+            android:id="@+id/remembercenter"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#CCFFCC"
+        android:layout_height="100dp">
+        <TextView
+
+
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Grower"
+            android:id="@+id/growerview" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/factorylabel"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/buyerspinner"
+            android:spinnerMode="dialog" />
+
+        <CheckBox
+            android:layout_width="110dp"
+            android:text="Remember"
+            android:checked="true"
+            android:id="@+id/rememberbuyer"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+
+        android:background="#FFFFFF"
+        android:id="@+id/result"
+        android:layout_weight="0.78" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:text="Continue To Buying..."
+        android:id="@+id/continue_to_buying"
+        android:background="#6699FF"
+        android:layout_gravity="center_horizontal"
+        />
+
+</android:LinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#778897"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/server"
+            android:padding="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="IPV4 Address"
+        android:id="@+id/textView" />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="2"
+        android:layout_gravity="center_vertical"
+
+        android:background="#ffffff"
+        android:maxLines="1"
+        android:layout_marginLeft="40dp"
+        android:maxLength="3"
+        android:id="@+id/iptext1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textSize="30dp"
+        android:id="@+id/dot1" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iptext2"
+        android:background="#ffffff"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_gravity="center_vertical"
+        android:ems="2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textSize="30dp"
+        android:id="@+id/dot2" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iptext3"
+        android:inputType="number"
+        android:ems="2"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff"
+        android:maxLength="3"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textSize="30dp"
+        android:id="@+id/dot3" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="2"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff"
+        android:maxLength="3"
+        android:id="@+id/iptext4"
+        />
+</LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        >
+
+
+
+        <TextView android:layout_height="match_parent"
+           android:id="@+id/port_numberTextView"
+           android:text="Remote site port"
+           android:gravity="center_vertical"
+           android:paddingRight="10dp"
+           android:layout_width="wrap_content"
+          />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/port_number"
+        android:maxLength="5"
+        android:layout_margin="5dp"
+        android:background="#ffffff"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/connect" />
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/progresslayout"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/remote_server"
+                android:id="@+id/serverImage"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:alpha="0.1"
+            android:src="@drawable/globe_icon"
+            android:id="@+id/imageView1"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/globe_icon"
+            android:layout_margin="5dp"
+            android:alpha="0.3"
+            android:id="@+id/imageView2"
+        />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/globe_icon"
+            android:alpha="0.5"
+            android:id="@+id/imageView3"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/globe_icon"
+            android:alpha="0.7"
+            android:id="@+id/imageView4"
+            />
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"
+                android:src="@drawable/client_phone"
+                android:id="@+id/imageButton" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+    </LinearLayout>

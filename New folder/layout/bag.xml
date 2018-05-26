@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableRow
+    android:id="@+id/bag_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#CCCCFF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/table_row_delete"
+        android:id="@+id/delete_row_imageButton" />
+
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#800000"
+        android:text="@string/bag_id"
+
+        android:gravity="center_vertical|center_horizontal"
+
+        android:id="@+id/bag_textview"
+        />
+</RelativeLayout>
+    <EditText
+        android:layout_height="wrap_content"
+
+        android:inputType="number"
+        android:layout_width="151dp"
+        android:hint="@string/WEIGHT"
+        android:id="@+id/text_bagweight"
+        />
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/std_weight"
+        android:layout_gravity="right"
+        android:id="@+id/set_standard_check"
+        android:checked="false" />
+
+
+</TableRow>
+
+
+
